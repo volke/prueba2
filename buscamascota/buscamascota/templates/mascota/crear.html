@@ -1,0 +1,13 @@
+<head>
+	<title> Crear Mascota </title>
+</head>
+<section>
+	<ul>
+	<h1> Registro Mascota </h1>
+		<form action = "" method="post" >
+		{% csrf_token %}
+		{{form.as_p}}
+		<input type="submit" value = "Regsitrar">
+		</form>
+	</ul>
+</section>

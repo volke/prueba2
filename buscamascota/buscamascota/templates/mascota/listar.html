@@ -1,0 +1,16 @@
+<head>
+	<title> Lista de Mascotas </title>
+</head>
+<section>
+	<ul>
+	<h1> Lista de Mascotas</h1>
+		{% for e in object_list %}
+			<li> Nombre: {{e.nombre}}<br>
+				 Raza: {{e.raza}}<br>
+				 Color: {{e.color}}<br>
+				 Sexo: {{e.sexo}}<br>
+				 Descripcion: {{e.descripcion}}<br><br></li>
+			
+		{% endfor %}
+	</ul>
+</section>
