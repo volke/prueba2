@@ -1,0 +1,21 @@
+<head>
+	<title> Lista de Mascotas Perdidas </title>
+</head>
+<section>
+	<ul>
+	<h1> Lista de Mascotas Perdidas</h1>
+		{% for e in object_list %}
+			{% if e.perdido %}
+			<li> Nombre: {{e.nombre}}<br>
+				 Tipo: {{e.tipo}}<br>
+				 Raza: {{e.raza}}<br>
+				 Color: {{e.color}}<br>
+				 Sexo: {{e.sexo}}<br>
+				 Foto: {{e.foto}}<br>
+				 Sector:{{e.sector}}<br>
+				 Direccion:{{e.direccion}}<br>
+				 Datos adicionales: {{e.datos_adicionales}}<br><br></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</section>

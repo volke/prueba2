@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'mascota',
     'usuario',
+    'mascota_perdida',
 )
 
 MIDDLEWARE_CLASSES = (
